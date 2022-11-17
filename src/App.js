@@ -20,6 +20,9 @@ export default function App() {
     <>
       <h1>Convert</h1>
       <CurrencyRow currencyOptions={currencyOptions} />
+
+
+      
       <div className='equals'>=</div>
       <CurrencyRow currencyOptions={currencyOptions} />
     </>
