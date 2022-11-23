@@ -1,10 +1,10 @@
-export default function CurrencyRow({ currencyOptions }) {
+export default function CurrencyRow({ currencyOptions, selectedCurrency, onChangeCurrency, amount, onChangeAmount }) {
   return (
 
     <div>
-      <input type="number" className="input" />
+      <input type="number" className="input" value={amount} onChange={onChangeAmount} />
 
-      <select>
+      <select value={selectedCurrency} onChange={onChangeCurrency}>
         {currencyOptions.map((currency, i) =>
           <option value={currency} key={i}>{currency}</option>
         )}
